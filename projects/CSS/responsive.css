@@ -1,0 +1,98 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #e3d5ca;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar ul.active {
+    display: flex; /* Display on click */
+  }
+
+  #project .container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+  }
+  #project project-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+
+  .about-left h3,
+  .about-right h3 {
+    font-size: 1.8em; /* Further reduced heading size for mobiles */
+  }
+
+  .about-left p {
+    font-size: 0.9em; /* Smaller font for paragraphs */
+    line-height: 1.4;
+  }
+
+  .skills {
+    justify-content: center; /* Center skills for mobile view */
+  }
+
+  .skills li {
+    font-size: 0.8em; /* Compact skill tag font */
+    padding: 5px 10px;
+  }
+
+  .cta-button {
+    font-size: 16px; /* Smaller button text */
+    padding: 12px 25px;
+  }
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-section {
+    height: calc(80vh - 40px);
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+  .main-header {
+    display: flex;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-content {
+    width: 70vw;
+  }
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+}
